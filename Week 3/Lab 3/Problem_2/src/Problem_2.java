@@ -19,10 +19,12 @@ abstract class Shapes {
         }
 
         public double volume() {
+            System.out.print("The volume of cylinder: ");
             return Shapes.PI * this.radius * this.radius * this.height;
         }
 
         public double surfaceArea() {
+            System.out.print("The area of surface of cylinder: ");
             return 2 * Shapes.PI * this.radius * this.radius + 2 * Shapes.PI * this.radius * this.height;
         }
     }
@@ -35,10 +37,12 @@ abstract class Shapes {
          }
 
          public double volume() {
+             System.out.print("The volume of sphere: ");
              return (4 * Shapes.PI * this.radius * this.radius * this.radius) / 3.0;
          }
 
          public double surfaceArea() {
+             System.out.print("The area of surface of sphere: ");
              return 4 * Shapes.PI * this.radius * this.radius;
          }
      }
@@ -51,10 +55,12 @@ abstract class Shapes {
          }
 
          public double volume() {
+             System.out.print("The volume of cube: ");
              return this.side * this.side * this.side;
          }
 
          public double surfaceArea() {
+             System.out.print("The area of surface of cube: ");
              return 6 * this.side * this.side;
          }
      }
@@ -72,6 +78,13 @@ abstract class Shapes {
              System.out.println(cube.surfaceArea());
          }
      }
+
+
+
+
+
+
+
 
 
 
