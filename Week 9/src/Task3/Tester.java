@@ -13,7 +13,7 @@ public class Tester {
         Person per = new Person("Meruert");
         Person per3 = (Person)per.clone();
         DateFormat df = new SimpleDateFormat("MM-dd-yyyy");
-        Date d1 = df.parse("10-23-1999"); // for example, today's date
+        Date d1 = df.parse("10-23-1999"); 
         Date d2 = df.parse("02-09-1972");
 
         Person per2 = new Person("Meruyert");
