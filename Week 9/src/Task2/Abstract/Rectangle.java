@@ -10,7 +10,6 @@ class Rectangle extends Shapes {
             this.width = width;
         }
 
-        // override
         public void print() {
             System.out.println("The Rectangle has been successfully printed!");
         }
