@@ -10,7 +10,7 @@ class Circle extends Shapes {
             this.radius = radius;
         }
 
-        // override
+        
         public void print() {
             System.out.println("Circle has been successfully printed!");
         }
