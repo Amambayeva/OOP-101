@@ -2,7 +2,7 @@ package Task2.Interface;
 
 
 interface Shapes {
-        //abstract methods
+        
         void print();
 
         double getArea();
@@ -17,12 +17,12 @@ interface Shapes {
             this.width = width;
         }
 
-        //override
+       
         public void print() {
             System.out.println("Rectangle has been successfully printed!");
         }
 
-        //override
+       
         public double getArea() {
             return (double) (length * width);
         }
