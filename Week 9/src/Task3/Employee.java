@@ -1,6 +1,10 @@
 package Task3;
 
 import java.util.Date;
+import java.lang.Comparable;
+import java.lang.Cloneable;
+import java.util.Objects;
+
 
 public class Employee extends Person implements Comparable, Cloneable {
     private double salary;
@@ -59,6 +63,9 @@ public class Employee extends Person implements Comparable, Cloneable {
         return (super.equals(emp) == super.equals(obj)) && ((emp.insuranceNumber == this.insuranceNumber)) &&
                 (emp.hireDate == this.hireDate) && (emp.salary == this.salary);
 
+    }
+    public int hashCode(){
+        return Objects.hash(super.hashCode(), salary, hireDate, insuranceNumber);
     }
 
     public int compareTo(Object obj) {
