@@ -1,6 +1,7 @@
 package Task3;
 
 import java.util.Date;
+import java.util.Objects;
 import java.util.Vector;
 
 public class Manager extends Employee implements Comparable, Cloneable {
@@ -36,6 +37,9 @@ public class Manager extends Employee implements Comparable, Cloneable {
 
     public boolean equals(Manager m) {
         return (super.equals(m) && this.employees.equals(m.employees) && this.bonus == m.bonus);
+    }
+    public int hashCode(){
+       return Objects.hash(bonus, super.hashCode());
     }
 
     public String toString() {
