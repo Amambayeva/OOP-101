@@ -1,6 +1,8 @@
 package Task3;
 
-  class Person implements Cloneable {
+import java.util.Objects;
+
+class Person implements Cloneable {
       private String name = "";
 
       public Person() {
@@ -33,6 +35,9 @@ package Task3;
 
       public Object clone() throws CloneNotSupportedException {
           return super.clone();
+      }
+      public int hashCode(){
+          return Objects.hash(name);
       }
 
   }
